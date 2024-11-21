@@ -47,7 +47,10 @@ public class ProductDTO implements Serializable {
 		categories.forEach(cat -> this.categories.add(new CategoryDTO(cat)));
 	}
 
-	public Long getId() {
+    public ProductDTO(long l, String testProduct, double v) {
+    }
+
+    public Long getId() {
 		return id;
 	}
 
